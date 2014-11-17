@@ -510,20 +510,20 @@ process_js = function(ast, filename, args)
     // Output license header and warning - do this only once, not each time a file
     // is being processed.
     _print('/*');
-    _print(' * This file is part of Adblock Plus <http://adblockplus.org/>,');
+    _print(' * This file is part of Adblock Cash <http://adblockcash.org/>,,');
     _print(' * Copyright (C) 2006-2014 Eyeo GmbH');
     _print(' *');
-    _print(' * Adblock Plus is free software: you can redistribute it and/or modify');
+    _print(' * Adblock Cash is free software: you can redistribute it and/or modify');
     _print(' * it under the terms of the GNU General Public License version 3 as');
     _print(' * published by the Free Software Foundation.');
     _print(' *');
-    _print(' * Adblock Plus is distributed in the hope that it will be useful,');
+    _print(' * Adblock Cash is distributed in the hope that it will be useful,');
     _print(' * but WITHOUT ANY WARRANTY; without even the implied warranty of');
     _print(' * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the');
     _print(' * GNU General Public License for more details.');
     _print(' *');
     _print(' * You should have received a copy of the GNU General Public License');
-    _print(' * along with Adblock Plus.  If not, see <http://www.gnu.org/licenses/>.');
+    _print(' * along with Adblock Cash.  If not, see <http://www.gnu.org/licenses/>.');
     _print(' */');
     _print();
     _print('//');
