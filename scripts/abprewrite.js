@@ -511,7 +511,7 @@ process_js = function(ast, filename, args)
     // is being processed.
     _print('/*');
     _print(' * This file is part of Adblock Cash <http://adblockcash.org/>,');
-    _print(' * (based on Adblock Plus <http://adblockplush.org/> by Eyeo GmbH)');
+    _print(' * (based on Adblock Plus <http://adblockplus.org/> by Eyeo GmbH)');
     _print(' * Copyright (C) Adblock Cash');
     _print(' *');
     _print(' * Adblock Cash is free software: you can redistribute it and/or modify');
@@ -531,7 +531,7 @@ process_js = function(ast, filename, args)
     _print('// This file has been generated automatically, relevant repositories:');
     if (options.source_repo)
       _print('// * ' + options.source_repo);
-    _print('// * https://hg.adblockplus.org/jshydra/');
+    _print('// * https://github.com/adblockcash/abc-jshydra/');
     _print('//');
     _print();
 
