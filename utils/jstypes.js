@@ -21,7 +21,7 @@ function divine_inheritance(clazz, constants) {
       clazz.inherits.push(iface.atom);
     return;
   }
-  
+
   if ("QueryInterface" in clazz.functions) {
     if (!clazz.inherits)
       clazz.inherits = [];
@@ -29,7 +29,7 @@ function divine_inheritance(clazz, constants) {
 	    if (ast.op == JSOP_GETPROP && ast.kids[0]) {
 		    let check = ast.kids[0];
 		    if (check.atom == "interfaces" && check.kids[0] &&
-	  	  		check.kids[0].atom == "Components") {
+	  	  		check.kids[0].atom == "components") {
           clazz.inherits.push(ast.atom);
         }
       }

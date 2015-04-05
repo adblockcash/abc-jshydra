@@ -1,5 +1,5 @@
 // This is a simple script to find all interfaces that a JS code uses, at least
-// via Components.interfaces.
+// via components.interfaces.
 
 include("../utils/cleanast.js");
 include("../utils/dumpast.js");
@@ -63,7 +63,7 @@ function find_interfaces(ast) {
 	if (ast.op == JSOP_GETPROP && ast.kids[0]) {
 		let check = ast.kids[0];
 		if (check.atom == "interfaces" && check.kids[0] &&
-				check.kids[0].atom == "Components") {
+				check.kids[0].atom == "components") {
 			_print("Interface " + ast.atom + " used at " + loc2str(ast));
 		} else if (ast.atom && ast.atom == "nsIMimeStreamConverter") {
 			_print(uneval(ast));

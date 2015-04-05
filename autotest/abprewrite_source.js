@@ -1,13 +1,13 @@
-const Cc = Components.classes
-const Ci = Components.interfaces;
-const Cu = Components.utils;
-const Cr = Components.results;
-const Cl = Components.unknown;
+const Cc = components.classes
+const Ci = components.interfaces;
+const Cu = components.utils;
+const Cr = components.results;
+const Cl = components.unknown;
 
 Cu.import("foo/bar.jsm");
 
-let {Utils} = require("utils");
-let {Filter, BlockingFilter} = require("filterClasses");
+let {Utils} = require("./utils");
+let {Filter, BlockingFilter} = require("./filterClasses");
 
 let foo;
 let bar = 2;

@@ -220,10 +220,10 @@ function modifyVariableDeclaration(ast)
     let declarator = ast.declarations[0];
 
     // Remove declarations of XPCOM shortcuts:
-    // const Cc = Components.classes;
-    // const Ci = Components.interfaces;
-    // const Cr = Components.results;
-    // const Cu = Components.utils;
+    // const Cc = components.classes;
+    // const Ci = components.interfaces;
+    // const Cr = components.results;
+    // const Cu = components.utils;
     if (/^C[ciru]$/.test(decompileAST(declarator.id)))
       return null;
 
@@ -556,7 +556,7 @@ process_js = function(ast, filename, args)
     //   ...
     //   return exports;
     // })();
-    let code = 'require.scopes["' + options.filename + '"] = (function() {\n' +
+    let code = 'require.scopes["./' + options.filename + '"] = (function() {\n' +
                'var exports = {};\n' +
                decompileAST(ast) +
                'return exports;\n' +
